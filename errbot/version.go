@@ -11,5 +11,5 @@ func init() {
 }
 
 func handler(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprint(w, "3.1.2")
+	fmt.Fprint(w, "3.2.1")
 }
