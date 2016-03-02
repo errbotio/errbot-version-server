@@ -4,5 +4,10 @@ runtime: go
 api_version: go1
 
 handlers:
+- url: /repos.json
+  static_files: static/repos.json
+  upload: static/repos.json
+
 - url: /.*
   script: _go_app
+
