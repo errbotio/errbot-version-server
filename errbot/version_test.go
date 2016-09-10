@@ -10,7 +10,11 @@ var versionTests = []struct {
 	request  string
 	expected string
 }{
-	{"http://version.errbot.io/", "4.2.2"},
+	{"http://version.errbot.io/", LAST_PY2},
+	{"http://version.errbot.io/?4.1.3", LAST_PY2},
+	{"http://version.errbot.io/?python=2.7.1&errbot=4.0.0", LAST_PY2},
+	{"http://version.errbot.io/?python=3.4.3&errbot=4.3.0", LAST_PY3},
+	{"http://version.errbot.io/?python=3.4.3&errbot=4.3.0", LAST_PY3},
 }
 
 func TestDefaultVersion(t *testing.T) {
