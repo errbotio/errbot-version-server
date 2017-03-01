@@ -7,6 +7,9 @@ handlers:
 - url: /repos.json
   static_files: static/repos.json
   upload: static/repos.json
+- url: /.well-known/acme-challenge/DId2uQH0rp29oX_y6PAUZS_Hrl7HF3RXDVwWgCs2I-k
+  static_files: static/challenge
+  upload: static/challenge
 
 - url: /.*
   script: _go_app
