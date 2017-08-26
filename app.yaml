@@ -7,7 +7,7 @@ handlers:
 - url: /repos.json
   static_files: static/repos.json
   upload: static/repos.json
-- url: /.well-known/acme-challenge/9Es62SZ2wLzV3EEjOdyATDfmc46WG-HxXWDxjET2PDI
+- url: /.well-known/acme-challenge/V4rQ0cE9-cbgfkgfIfQdXWLHxoTAAr92YO-bnnEtyZo
   static_files: static/challenge
   upload: static/challenge
 
