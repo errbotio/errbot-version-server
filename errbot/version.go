@@ -9,7 +9,7 @@ import (
 )
 
 const LAST_PY2 = "4.2.2"
-const LAST_PY3 = "5.2.0"
+const LAST_PY3 = "6.1.2"
 
 func init() {
 	http.HandleFunc("/", handler)
